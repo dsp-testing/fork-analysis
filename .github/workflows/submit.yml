@@ -29,7 +29,7 @@ jobs:
       - name: Run a multi-line script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REF: ${{ github.ref }}
+          REF: "refs/pull/1/merge"
           SHA: ${{ github.sha }}
         run: |
           path="./example.sarif"
